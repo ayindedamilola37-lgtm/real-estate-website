@@ -1,0 +1,12 @@
+// Get the search form
+const searchForm = document.querySelector('form');
+
+// Add an event listener to the form
+searchForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const searchInput = document.querySelector('#search');
+  const searchQuery = searchInput.value;
+  // Do something with the search query, e.g., make an API call
+  console.log(searchQuery);
+});
+
